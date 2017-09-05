@@ -35,7 +35,7 @@ class WelcomeController extends Controller {
 		$value=config('app.timezone');
 		config(['app.timezone' => 'America/Chicago']);
 		$value1=config('app.timezone');
-		//dd($value);
+		dd($value);
 		
 	}
 

@@ -11,7 +11,7 @@
 |
 */
 
-//Route::get('/', 'WelcomeController@index');
+Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 /*Route::group(['middleware' => 'OldMiddleware'],function(){
@@ -19,16 +19,16 @@ Route::get('home', 'HomeController@index');
 		dd('this is test');
 	});
 });*/
-Route::group(['middleware' => 'Old'], function () {
+/*Route::group(['middleware' => 'Old'], function () {
     Route::get('test/{age}', function () {
 		dd('this is test');
 
-    });
+    });*/
 
-    Route::get('user/profile', function () {
+/*    Route::get('user/profile', function () {
         // 使用 Auth 中间件
     });
-});
+});*/
 //路由参数-必选参数
 /*Route:get('home/{id}/comments/{comment}',function($id,$comment){
 	echo  "User=".$id.'-----comment='.$comment;die;
